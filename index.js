@@ -11,6 +11,7 @@ function handleSubmit () {
 function getDogs(numDogs) {
     fetch(`https://dog.ceo/api/breeds/image/random/${numDogs}`).then(response => response.json()).then((responseJson) => {
         let dogsHtml = '';
+        console.log(responseJson.message);
         for (i = 0; i < responseJson.message.length; i++) {
             dogsHtml += `<img src='${responseJson.message[i]}' alt='result-image'>`;
         }

@@ -20,12 +20,11 @@ body {
 .js-results{
     height: 85vh;
     overflow-y: auto;
-    margin: 20px 0;
 }
 
 img {
     width: 400px;
 }
 header {
-    height: 15vh;
+    height: 10vh;
 }
