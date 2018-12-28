@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Random Dogs!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class='content'>
+        <h1>Get some dogs for your dawgs!</h1>
+        <form>
+            <label for='number-of-dogs'>How many dogs for your dawgs?</label>
+            <input id='number-of-dogs' min='1' max='50' placeholder='3' type='number' class='num-dogs'>
+            <button type='submit' class='js-submit-button'>FETCH!</button>
+        </form>
+        <section class='results js-results'></section>
+    </section>
+    <script src="index.js"></script>    
+</body>
+</html>
